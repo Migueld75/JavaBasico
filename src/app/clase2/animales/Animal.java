@@ -1,14 +1,14 @@
 package app.clase2.animales;
 
-public class Animal {
+public abstract class Animal {
 
     private String nombre;
     private double peso;
     private String color;
     private int edad;
 
-    public void hacerRuido() {
-    }
+    public abstract void hacerRuido();
+    public abstract void comer();
 
     public String getNombre() {
         return nombre;

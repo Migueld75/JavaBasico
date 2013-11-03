@@ -1,6 +1,6 @@
 package app.clase2.animales;
 
-public class Perro extends Animal{
+public class Perro extends Animal {
 
     public Perro(String nombre, int edad) {
         this.setNombre(nombre);
@@ -11,6 +11,9 @@ public class Perro extends Animal{
     public void hacerRuido() {
         System.out.println("Guau Guau!!!");
     }
-    
-    
+
+    @Override
+    public void comer() {
+        System.out.println("Camote");
+    }
 }
