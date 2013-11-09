@@ -34,7 +34,7 @@ public class AppMediateca {
         prestamo.agregarSoporte(libro, 15);
         //prestamo.agregarSoporte(libro2, 15);
 
-        System.out.println(prestamo.getSocio().getNombre() + " pidio prestado " + prestamo.getSoportes().size() + " soportes " + " deberá pagar " + prestamo.calcularPrecioTotal());
+        System.out.println(prestamo.getSocio().getNombre() + " pidió prestado " + prestamo.getSoportes().size() + " soporte(s) " + " deberá pagar " + prestamo.calcularPrecioTotal());
 
     }
 }
