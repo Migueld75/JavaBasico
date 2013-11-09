@@ -11,14 +11,15 @@ import java.util.Locale;
 public class Formato {
 
     public static void main(String[] args) {
-        /*Formato.NumberFormat();*/
-        /*Formato.MonedaFormat();*/
-        /*Formato.FechaFormat();*/
-        /*Formato.FechaFormat2();*/
-        Formato.FechaFormat3();
+        /*Formato.numberFormat();*/
+        /*Formato.currencyFormat();*/
+        /*Formato.gregorianCalendar();*/
+        /*Formato.dateFormat();*/
+        /*Formato.FechaFormat3();*/
+        Formato.simpleDateFormat();
     }
 
-    public static void NumberFormat() {
+    public static void numberFormat() {
         // Establecer el Locale como US para usar el punto como
         // separador decimal.
         NumberFormat nf = NumberFormat.getInstance(Locale.US);
@@ -42,7 +43,7 @@ public class Formato {
         System.out.println(nf.format(45.2));
     }
 
-    public static void MonedaFormat() {
+    public static void currencyFormat() {
         // Formato de moneda
         NumberFormat formatoAleman = NumberFormat.getCurrencyInstance(Locale.GERMANY);
         formatoAleman.setGroupingUsed(false);
@@ -64,7 +65,7 @@ public class Formato {
         System.out.println("Moneda arabe :" + formatoArabe.format(150));
     }
 
-    public static void FechaFormat() {
+    public static void gregorianCalendar() {
         GregorianCalendar ahora = new GregorianCalendar();
         // Crear una fecha
         //Calendar ahora = new GregorianCalendar(2007,2,2);
@@ -84,7 +85,7 @@ public class Formato {
         System.out.println("Día del año: " + ahora.get(Calendar.DAY_OF_YEAR));
     }
 
-    public static void FechaFormat2() {
+    public static void dateFormat() {
         Date now = new Date();
         System.out.println(now.getTime());
         DateFormat df = DateFormat.getDateInstance();
@@ -93,19 +94,32 @@ public class Formato {
         DateFormat df3 = DateFormat.getDateInstance(DateFormat.LONG);
         DateFormat df4 = DateFormat.getDateInstance(DateFormat.FULL);
         SimpleDateFormat df5 = new SimpleDateFormat("EEE, d MMM yyyy HH:mm:ss Z");
-        //DateFormat df4 = DateFormat.getDateInstance(DateFormat.FULL, Locale.US);
+        DateFormat df6 = DateFormat.getDateInstance(DateFormat.FULL, Locale.US);
+
         String s = df.format(now);
         String s1 = df1.format(now);
         String s2 = df2.format(now);
         String s3 = df3.format(now);
         String s4 = df4.format(now);
         String s5 = df5.format(now);
+        String s6 = df6.format(now);
         System.out.println("(Default) Hoy es " + s);
         System.out.println("(SHORT) Hoy es " + s1);
         System.out.println("(MEDIUM) Hoy es " + s2);
         System.out.println("(LONG) Hoy es " + s3);
         System.out.println("(FULL) Hoy es " + s4);
         System.out.println("(CUSTOM) Hoy es " + s5);
+        System.out.println("(CUSTOM) Hoy es " + s6);
+    }
+
+    public static void simpleDateFormat() {
+        //http://docs.oracle.com/javase/1.4.2/docs/api/java/text/SimpleDateFormat.html
+
+        DateFormat df = new SimpleDateFormat("E d MMM ");
+
+        Date now = new Date();
+
+        System.out.println(df.format(now));
     }
 
     public static void FechaFormat3() {
@@ -113,13 +127,13 @@ public class Formato {
         Date d1 = c1.getTime();
         Calendar c2 = new GregorianCalendar(2011, 9, 3);
         Date d2 = c2.getTime();
+
         if (d1.after(d2)) {
             System.out.println("d1 es después que d2");
         }
+
         if (d1.before(d2)) {
             System.out.println("d1 es antes que d2");
         }
     }
-    
-    
 }
