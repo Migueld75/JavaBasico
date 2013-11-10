@@ -1,0 +1,17 @@
+para compilar el archivo: shift + F6
+para ordenar el codigo: alt + shift + f
+para no escribir todo: control + space 
+para cambiar el nombre de todas las clases: ctrol + r
+para crar lo getter and setters: Alt + Insert 
+copiar linea: shift + control + flecha arriba o abajo
+mover linea: shift + alt + flecha arriba o abajo
+suprimir linea: shift + suprimir
+Crear System.out.println(""): sout + tab
+Crear public static void main(String[] args): psvm + tab
+guardar: ctrl + s
+Importar paquete: ctrl + shift + i
+metodos a sobreescribir: alt + insert + override methods
+ctrl + shift - group code
+ctrl + shift + collapse code
+shift + supr elimina la linea
+
