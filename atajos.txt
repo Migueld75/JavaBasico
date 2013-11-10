@@ -11,7 +11,7 @@ Crear public static void main(String[] args): psvm + tab
 guardar: ctrl + s
 Importar paquete: ctrl + shift + i
 metodos a sobreescribir: alt + insert + override methods
-ctrl + shift - group code
-ctrl + shift + collapse code
-shift + supr elimina la linea
-
+group code: ctrl + shift - 
+collapse code: ctrl + shift + 
+cortar linea: shift + supr 
+Crear un for: for + i + tab
