@@ -15,8 +15,8 @@ public class Formato {
         /*Formato.currencyFormat();*/
         /*Formato.gregorianCalendar();*/
         /*Formato.dateFormat();*/
-        /*Formato.FechaFormat3();*/
         Formato.simpleDateFormat();
+        Formato.compareDates();
     }
 
     public static void numberFormat() {
@@ -113,26 +113,26 @@ public class Formato {
     }
 
     public static void simpleDateFormat() {
-        //http://docs.oracle.com/javase/1.4.2/docs/api/java/text/SimpleDateFormat.html
+        //http://docs.oracle.com/javase/1.4.2/docs/api/java/text/SimpleDateFormat.html        
 
-        DateFormat df = new SimpleDateFormat("E d MMM ");
+        DateFormat df = new SimpleDateFormat("E d MMMM ");
 
         Date now = new Date();
 
         System.out.println(df.format(now));
     }
 
-    public static void FechaFormat3() {
+    public static void compareDates() {
         Calendar c1 = new GregorianCalendar(2011, 9, 1);
-        Date d1 = c1.getTime();
+        Date fecha1 = c1.getTime();
         Calendar c2 = new GregorianCalendar(2011, 9, 3);
-        Date d2 = c2.getTime();
+        Date fecha2 = c2.getTime();
 
-        if (d1.after(d2)) {
+        if (fecha1.after(fecha2)) {
             System.out.println("d1 es después que d2");
         }
 
-        if (d1.before(d2)) {
+        if (fecha1.before(fecha2)) {
             System.out.println("d1 es antes que d2");
         }
     }
