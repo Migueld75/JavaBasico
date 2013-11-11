@@ -28,6 +28,7 @@ public class CintaVideo extends Soporte {
 
     public String getDirector() {
         return director;
+
     }
 
     public void setDirector(String director) {

@@ -10,6 +10,7 @@ package app.clase2.mediateca;
  * @author user
  */
 public abstract class Soporte {
+
     private String titulo;
     private int maximoDiasPrestamos;
     private double precioDiaPrestamo;
@@ -21,7 +22,7 @@ public abstract class Soporte {
 
     public void setTitulo(String titulo) {
         this.titulo = titulo;
-    }  
+    }
 
     public int getMaximoDiasPrestamos() {
         return maximoDiasPrestamos;
@@ -44,12 +45,11 @@ public abstract class Soporte {
     }
 
     public void setDiasPrestamo(int diasPrestamo) {
-        if(diasPrestamo > this.maximoDiasPrestamos){
+        if (diasPrestamo > this.maximoDiasPrestamos) {
             System.out.println("El maximo de dias es " + this.maximoDiasPrestamos);
             return;
         }
         this.diasPrestamo = diasPrestamo;
     }
-    
 
 }
