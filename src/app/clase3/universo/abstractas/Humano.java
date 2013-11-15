@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package app.clase3.universo;
+package app.clase3.universo.abstractas;
 
 import app.clase3.universo.abstractas.SerVivo;
 

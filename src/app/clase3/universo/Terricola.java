@@ -4,7 +4,7 @@
  */
 package app.clase3.universo;
 
-import app.clase3.universo.Humano;
+import app.clase3.universo.abstractas.Humano;
 
 /**
  *
