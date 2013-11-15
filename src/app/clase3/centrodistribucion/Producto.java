@@ -7,6 +7,13 @@ public abstract class Producto {
     private String unidadMedida;
     private double precio;
 
+    public Producto(String codigo, String descripcion, String unidadMedida, double precio) {
+        this.codigo = codigo;
+        this.descripcion = descripcion;
+        this.unidadMedida = unidadMedida;
+        this.precio = precio;
+    }
+
     public String getCodigo() {
         return codigo;
     }

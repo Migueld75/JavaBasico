@@ -43,14 +43,14 @@ public class Compra {
         System.out.println("Monto a pagar: " + this.producto.getPrecio() * this.cantidad);
     }
 
-    public void CompraMedicamento(CentroDistribucion centroDistribucion, Cliente cliente, RecetaMedica recetaMedica) {
+    public void CompraMedicamento(CentroDistribucion centroDistribucion, Cliente cliente, RecetaMedica recetaMedica, int cantidad) {
         this.centroDistribucion = centroDistribucion;
         this.cliente = cliente;
         this.producto = recetaMedica.getMedicamento();
-        this.cantidad = recetaMedica.getCantidad();
+        this.cantidad = cantidad;
 
         System.out.println("Cliente: " + this.cliente.getNombre());
-        System.out.println("Producto: " + this.producto.getDescripcion());
+        System.out.println("Producto: " + this.producto.getDescripcion());        
         System.out.println("Cantidad: " + this.cantidad);
         System.out.println("Monto a pagar: " + this.producto.getPrecio() * this.cantidad);
     }

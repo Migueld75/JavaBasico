@@ -10,7 +10,7 @@ public class Botica extends CentroDistribucion {
 
     @Override
     public void MostrarHorarioAtencion() {
-        System.out.println("La Botica atiende todos el dia");
+        System.out.println("La Botica atiende todo el dia");
     }
 
 }
