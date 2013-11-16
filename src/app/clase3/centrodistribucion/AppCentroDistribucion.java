@@ -40,7 +40,7 @@ public class AppCentroDistribucion {
         Compra compra = new Compra();
         
         compra.CompraProductoPersonal(botica, cliente, cuidadoPersonal, 2);
-        compra.CompraMedicamento(botica, cliente, recetaMedica,1);
+        compra.CompraMedicamento(farmacia, cliente, recetaMedica,1);
         
         
     }
