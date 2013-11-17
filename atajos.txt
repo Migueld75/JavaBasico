@@ -17,4 +17,5 @@ cortar linea: shift + supr
 Crear un for: fori + tab
 Limpiar la consola: ctrl + L
 Crear un bloque try catch: trycatch + tab
+Estructura para recorrer lista: fore + tab
 
