@@ -17,6 +17,11 @@ public class Formato {
         /*Formato.dateFormat();*/
         Formato.simpleDateFormat();
         Formato.compareDates();
+        
+        int a = 10;
+        
+        Integer A = new Integer(a);
+        System.out.println(A.intValue());
     }
 
     public static void numberFormat() {
