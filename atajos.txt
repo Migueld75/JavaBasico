@@ -19,3 +19,41 @@ Limpiar la consola: ctrl + L
 Crear un bloque try catch: trycatch + tab
 Estructura para recorrer lista: fore + tab
 
+dropbox 
+http://goo.gl/ErW8U7
+
+
+http://elcomercio.pe/actualidad/1663111/noticia-frustrante-error-404-que-sigue-apareciendo-este-mensaje
+
+http://it-ebooks.info/book/15/
+
+Debug It!
+Find, Repair, and Prevent Bugs in Your Code
+
+Llamar a las clases con frases nominales
+----------------------------------------
+
+http://answers.yahoo.com/question/index?qid=20061210073252AAgSnn8
+
+1.
+Frase Nominales: 
+tienen verbo copulativo (ser, estar, parecer...) acompañado de atributo, indican una cualidad del sujeto. 
+Ejemplo: El chico es listo
+en clases ChicoListo
+
+Frases Verbales: 
+NO tienen verbo copulativo, indican acciones del sujeto. 
+Ejemplo: El chico lee un libro 
+en metodos leeLibro
+
+2. 
+Las frases nominales describen un sujeto y objeto: "Que lindo dia". " un dia muy frio" 
+Las frases verbales son las que denotan una acción: "Diana juega futbol" 
+
+http://algarabia.com/del-mes/frases-nominales-recurrentes/
+
+
+
+
+
+
