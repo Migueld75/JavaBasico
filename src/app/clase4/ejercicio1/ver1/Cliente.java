@@ -1,4 +1,4 @@
-package app.clase4.ejercicio1;
+package app.clase4.ejercicio1.ver1;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -29,13 +29,25 @@ public class Cliente {
             // Crear los canales de lectura y escritura
             BufferedReader in = new BufferedReader(new InputStreamReader(cliente.getInputStream()));
             PrintWriter out = new PrintWriter(cliente.getOutputStream(), true);
-            // COMUNICACION 1
-            String msg = in.readLine();
+            
+            String msg = in.readLine();            
             System.out.println(msg);
-            // COMUNICACION 2
             out.println(operacion);
+            System.out.println(operacion);
+            
+            msg = in.readLine();
+            System.out.println(msg);
             out.println(parametro1);
+            System.out.println(parametro1);
+            
+            msg = in.readLine();
+            System.out.println(msg);
             out.println(parametro2);
+            System.out.println(parametro2);
+            
+            msg = in.readLine();
+            System.out.println(msg);
+            
             // Cerrar canales
             in.close();
             out.close();

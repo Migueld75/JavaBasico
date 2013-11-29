@@ -1,4 +1,4 @@
-package app.clase4.ejercicio1;
+package app.clase4.ejercicio1.ver1;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -55,6 +55,7 @@ public class Servidor {
                         resultado = operacionAritmetica.division(Long.parseLong(parametro1), Long.parseLong(parametro2));
                 }
                 
+                out.println("Resultado: " + resultado); 
                 System.out.println("Resultado: " + resultado);
                 /* Cerramos el canal */
                 in.close();

@@ -1,4 +1,4 @@
-package app.clase4.ejercicio1;
+package app.clase4.ejercicio1.ver1;
 
 public class OperacionAritmetica {
     public long sumar(long sumando1, long sumando2){
