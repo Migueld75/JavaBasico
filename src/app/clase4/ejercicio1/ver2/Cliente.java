@@ -55,7 +55,6 @@ public class Cliente implements Runnable {
             socket.close();
         } catch (IOException e) {
             System.out.println(e.getMessage());
-            e.printStackTrace();
         }
 
     }
