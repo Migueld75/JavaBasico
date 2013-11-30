@@ -20,8 +20,7 @@ public class Servidor {
             while (true) {
                 Socket clientesocket = serversocket.accept();
                 
-                OperadorAritmetico operador = new OperadorAritmetico();
-                AtendedorSolicitud atendedor = new AtendedorSolicitud(clientesocket, operador);                
+                AtendedorSolicitud atendedor = new AtendedorSolicitud(clientesocket);                
                 atendedor.start();
             }
 

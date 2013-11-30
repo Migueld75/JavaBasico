@@ -10,7 +10,7 @@ public class AtendedorSolicitud extends Thread {
     private Socket socket;
     private OperadorAritmetico operadorAritmetico;
 
-    public AtendedorSolicitud(Socket socket, OperadorAritmetico operadorAritmetico) {
+    public AtendedorSolicitud(Socket socket) {
         this.socket = socket;
         this.operadorAritmetico = operadorAritmetico;
     }
@@ -36,16 +36,16 @@ public class AtendedorSolicitud extends Thread {
             int resultadoOperacion=0;
             switch (operacion.toUpperCase()) {
                 case "SUMAR":
-                    resultadoOperacion = operadorAritmetico.sumar(Integer.parseInt(parametro1), Integer.parseInt(parametro2));
+                    resultadoOperacion = OperadorAritmetico.sumar(Integer.parseInt(parametro1), Integer.parseInt(parametro2));
                     break;
                 case "RESTAR":
-                    resultadoOperacion = operadorAritmetico.restar(Integer.parseInt(parametro1), Integer.parseInt(parametro2));
+                    resultadoOperacion = OperadorAritmetico.restar(Integer.parseInt(parametro1), Integer.parseInt(parametro2));
                     break;
                 case "MULTIPLICAR":
-                    resultadoOperacion = operadorAritmetico.multiplicar(Integer.parseInt(parametro1), Integer.parseInt(parametro2));
+                    resultadoOperacion = OperadorAritmetico.multiplicar(Integer.parseInt(parametro1), Integer.parseInt(parametro2));
                     break;
                 case "DIVIDIR":
-                    resultadoOperacion = operadorAritmetico.dividir(Integer.parseInt(parametro1), Integer.parseInt(parametro2));
+                    resultadoOperacion = OperadorAritmetico.dividir(Integer.parseInt(parametro1), Integer.parseInt(parametro2));
                     break;
                 default: break;
             }
