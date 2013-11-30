@@ -33,20 +33,25 @@ public class AtendedorSolicitud extends Thread {
             String parametro2 = in.readLine();
             System.out.println(parametro2);
 
+            int resultadoOperacion=0;
             switch (operacion.toUpperCase()) {
                 case "SUMAR":
-                    operadorAritmetico.sumar(Integer.parseInt(parametro1), Integer.parseInt(parametro2));
+                    resultadoOperacion = operadorAritmetico.sumar(Integer.parseInt(parametro1), Integer.parseInt(parametro2));
                     break;
                 case "RESTAR":
-                    operadorAritmetico.restar(Integer.parseInt(parametro1), Integer.parseInt(parametro2));
+                    resultadoOperacion = operadorAritmetico.restar(Integer.parseInt(parametro1), Integer.parseInt(parametro2));
                     break;
                 case "MULTIPLICAR":
-                    operadorAritmetico.multiplicar(Integer.parseInt(parametro1), Integer.parseInt(parametro2));
+                    resultadoOperacion = operadorAritmetico.multiplicar(Integer.parseInt(parametro1), Integer.parseInt(parametro2));
                     break;
                 case "DIVIDIR":
-                    operadorAritmetico.dividir(Integer.parseInt(parametro1), Integer.parseInt(parametro2));
+                    resultadoOperacion = operadorAritmetico.dividir(Integer.parseInt(parametro1), Integer.parseInt(parametro2));
                     break;
+                default: break;
             }
+            
+            out.println("resultado: " + resultadoOperacion);
+            System.out.println("resultado: " + resultadoOperacion);
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
