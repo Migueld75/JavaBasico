@@ -33,30 +33,40 @@ public class AtendedorSolicitud extends Thread {
             String parametro2 = in.readLine();
             System.out.println(parametro2);
 
-            int resultadoOperacion=0;
-            switch (operacion.toUpperCase()) {
-                case "SUMAR":
-                    resultadoOperacion = OperadorAritmetico.sumar(Integer.parseInt(parametro1), Integer.parseInt(parametro2));
-                    break;
-                case "RESTAR":
-                    resultadoOperacion = OperadorAritmetico.restar(Integer.parseInt(parametro1), Integer.parseInt(parametro2));
-                    break;
-                case "MULTIPLICAR":
-                    resultadoOperacion = OperadorAritmetico.multiplicar(Integer.parseInt(parametro1), Integer.parseInt(parametro2));
-                    break;
-                case "DIVIDIR":
-                    resultadoOperacion = OperadorAritmetico.dividir(Integer.parseInt(parametro1), Integer.parseInt(parametro2));
-                    break;
-                default: break;
+            int resultadoOperacion = 0;
+            String mensaje = "";
+            
+            try {
+
+                switch (operacion.toUpperCase()) {
+                    case "SUMAR":
+                        resultadoOperacion = OperadorAritmetico.sumar(Integer.parseInt(parametro1), Integer.parseInt(parametro2));
+                        break;
+                    case "RESTAR":
+                        resultadoOperacion = OperadorAritmetico.restar(Integer.parseInt(parametro1), Integer.parseInt(parametro2));
+                        break;
+                    case "MULTIPLICAR":
+                        resultadoOperacion = OperadorAritmetico.multiplicar(Integer.parseInt(parametro1), Integer.parseInt(parametro2));
+                        break;
+                    case "DIVIDIR":
+                        resultadoOperacion = OperadorAritmetico.dividir(Integer.parseInt(parametro1), Integer.parseInt(parametro2));
+                        break;
+                    default:
+                        break;
+                }
+
+                mensaje = "resultado: " + resultadoOperacion;
+
+            } catch (Exception e) {
+                mensaje = e.getMessage();
+                System.out.println(e.getMessage());
             }
             
-            out.println("resultado: " + resultadoOperacion);
-            System.out.println("resultado: " + resultadoOperacion);
+            out.println(mensaje);
+                       
 
         } catch (Exception e) {
-            System.out.println(e.getMessage());
-            e.printStackTrace();
+            System.out.println(e.getMessage());            
         }
     }
-
 }

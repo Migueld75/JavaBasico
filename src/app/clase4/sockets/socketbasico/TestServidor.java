@@ -1,4 +1,4 @@
-    package app.clase4.socketbasico;
+    package app.clase4.sockets.socketbasico;
 
 public class TestServidor {
 

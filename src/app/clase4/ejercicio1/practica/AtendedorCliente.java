@@ -29,36 +29,44 @@ public class AtendedorCliente extends Thread {
             out.println(Encriptador.CifrarMensaje("Ingrese primer parametro: "));
             String parametro1 = in.readLine();
             operacion = Encriptador.DescifrarMensaje(parametro1);
-            
+
             out.println(Encriptador.CifrarMensaje("Ingrese segundo parametro: "));
             String parametro2 = in.readLine();
             operacion = Encriptador.DescifrarMensaje(parametro2);
 
             int resultado = 0;
 
-            switch (operacion) {
-                case "SUMAR":
-                    resultado = OperadorAritmetico.sumar(Integer.parseInt(parametro1), Integer.parseInt(parametro2));
-                    break;
-                case "RESTAR":
-                    resultado = OperadorAritmetico.restar(Integer.parseInt(parametro1), Integer.parseInt(parametro2));
-                    break;
-                case "MULTIPLICAR":
-                    resultado = OperadorAritmetico.multiplicar(Integer.parseInt(parametro1), Integer.parseInt(parametro2));
-                    break;
-                case "DIVIDIR":
-                    resultado = OperadorAritmetico.dividir(Integer.parseInt(parametro1), Integer.parseInt(parametro2));
-                    break;
-                default:
-                    break;
+            try {
+                switch (operacion) {
+                    case "SUMAR":
+                        resultado = OperadorAritmetico.sumar(Integer.parseInt(parametro1), Integer.parseInt(parametro2));
+                        break;
+                    case "RESTAR":
+                        resultado = OperadorAritmetico.restar(Integer.parseInt(parametro1), Integer.parseInt(parametro2));
+                        break;
+                    case "MULTIPLICAR":
+                        resultado = OperadorAritmetico.multiplicar(Integer.parseInt(parametro1), Integer.parseInt(parametro2));
+                        break;
+                    case "DIVIDIR":
+                        resultado = OperadorAritmetico.dividir(Integer.parseInt(parametro1), Integer.parseInt(parametro2));
+                        break;
+                    default:
+                        break;
+                }                
+                out.println(Encriptador.CifrarMensaje("Resultado: " + resultado));                
+            } catch (Exception e) {
+                out.println(e.getMessage());
             }
+            
+            
 
-            out.println(Encriptador.CifrarMensaje("Resultado: " + resultado));
+
+
+            
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
 
     }
-
 }

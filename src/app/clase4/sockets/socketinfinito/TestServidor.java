@@ -1,4 +1,4 @@
-    package app.clase4.socketinfinito;
+    package app.clase4.sockets.socketinfinito;
 
 public class TestServidor {
 
