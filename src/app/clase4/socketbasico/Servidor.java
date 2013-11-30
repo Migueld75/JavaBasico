@@ -1,4 +1,4 @@
-package app.clase4.sockets.socketbasico;
+package app.clase4.socketbasico;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

@@ -1,4 +1,4 @@
-package app.clase4.sockets.sockethilo;
+package app.clase5.sockets.sockethilo;
 
 import java.io.BufferedReader;
 import java.io.IOException;
