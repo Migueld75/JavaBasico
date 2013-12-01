@@ -8,7 +8,10 @@ public class TestEncriptador {
     public static void main(String[] args) throws Exception {
         try {
 
-            String mensaje = "Hola mundo";
+            /*Note null padding*/
+            //String mensaje = "test text 123\0\0\0";
+            String mensaje = "cara ojo2 111\0\0\0";
+                    
             System.out.println(mensaje);
 
             String mensajecifrado = Encriptador.CifrarMensaje(mensaje);
